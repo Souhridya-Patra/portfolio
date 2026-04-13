@@ -1,0 +1,7 @@
+{
+  "name": "Portfolio - Smart AI E-Portfolio",
+  "description": "A high-performance, AI-integrated portfolio for Computer Science and Engineering students featuring a Gemini-powered career assistant.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

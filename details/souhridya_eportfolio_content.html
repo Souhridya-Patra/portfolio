@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Souhridya Patra — E-Portfolio Content</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --color-background-primary: #ffffff;
+    --color-background-secondary: #f5f4f0;
+    --color-text-primary: #1a1a18;
+    --color-text-secondary: #6b6a64;
+    --color-text-info: #185FA5;
+    --color-border-tertiary: rgba(0,0,0,0.12);
+    --color-border-secondary: rgba(0,0,0,0.22);
+    --color-border-primary: rgba(0,0,0,0.32);
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-background-primary: #1e1e1c;
+      --color-background-secondary: #2a2a28;
+      --color-text-primary: #e8e6de;
+      --color-text-secondary: #9c9a92;
+      --color-text-info: #85B7EB;
+      --color-border-tertiary: rgba(255,255,255,0.1);
+      --color-border-secondary: rgba(255,255,255,0.2);
+      --color-border-primary: rgba(255,255,255,0.3);
+    }
+    .tag-purple { background: #3C3489 !important; color: #CECBF6 !important; }
+    .tag-teal   { background: #085041 !important; color: #9FE1CB !important; }
+    .tag-amber  { background: #633806 !important; color: #FAC775 !important; }
+    .tag-blue   { background: #0C447C !important; color: #B5D4F4 !important; }
+    .tag-coral  { background: #712B13 !important; color: #F5C4B3 !important; }
+    .tag-green  { background: #27500A !important; color: #C0DD97 !important; }
+  }
+  body {
+    font-family: -apple-system, 'Segoe UI', sans-serif;
+    background: var(--color-background-secondary);
+    color: var(--color-text-primary);
+    padding: 2rem 1rem;
+    line-height: 1.6;
+  }
+  .container { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 22px; font-weight: 500; margin-bottom: 4px; }
+  .subtitle { font-size: 14px; color: var(--color-text-secondary); margin-bottom: 2.5rem; }
+  .sec { margin-bottom: 2rem; }
+  .sec-title { font-size: 12px; font-weight: 500; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 10px; }
+  .card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1rem 1.25rem; margin-bottom: 10px; position: relative; }
+  .card-title { font-size: 15px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 4px; }
+  .card-sub { font-size: 13px; color: var(--color-text-secondary); margin-bottom: 8px; }
+  .card-body { font-size: 13px; color: var(--color-text-primary); line-height: 1.65; white-space: pre-line; }
+  .tag { display: inline-block; font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: 20px; margin: 3px 3px 3px 0; }
+  .tag-purple { background: #EEEDFE; color: #3C3489; }
+  .tag-teal   { background: #E1F5EE; color: #085041; }
+  .tag-amber  { background: #FAEEDA; color: #633806; }
+  .tag-blue   { background: #E6F1FB; color: #0C447C; }
+  .tag-coral  { background: #FAECE7; color: #712B13; }
+  .tag-green  { background: #EAF3DE; color: #27500A; }
+  .copy-btn { position: absolute; top: 12px; right: 12px; font-size: 11px; padding: 3px 10px; border-radius: var(--border-radius-md); border: 0.5px solid var(--color-border-secondary); background: transparent; color: var(--color-text-secondary); cursor: pointer; transition: background 0.15s; }
+  .copy-btn:hover { background: var(--color-background-secondary); }
+  .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+  .dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--color-border-primary); margin-right: 6px; vertical-align: middle; }
+  .info-link { color: var(--color-text-info); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <h1>Souhridya Patra — E-Portfolio Content</h1>
+  <p class="subtitle">Ready-to-use content for every section of your e-portfolio</p>
+
+  <!-- Hero / About -->
+  <div class="sec">
+    <p class="sec-title">Hero / About me</p>
+    <div class="card">
+      <button class="copy-btn" onclick="copyText('hero-hl')">Copy</button>
+      <p class="card-title">Headline</p>
+      <p class="card-body" id="hero-hl">CSE Undergraduate · AI &amp; Open Source Enthusiast · MATLAB | Python | MongoDB</p>
+    </div>
+    <div class="card">
+      <button class="copy-btn" onclick="copyText('about-bio')">Copy</button>
+      <p class="card-title">About / Bio</p>
+      <p class="card-body" id="about-bio">I'm Souhridya Patra, a 2nd-year B.Tech Computer Science student at SRMIST, Tiruchirappalli. I work at the intersection of AI, open source, and engineering education.
+
+I've interned at NeuralBI (AI research) and FOSSEE, IIT Bombay (Osdag), contributed to open-source projects through Resourcio Community and GirlScript Summer of Code, and served as a MATLAB Workshop Instructor — teaching autonomous systems and model-based design to students across India.
+
+I'm currently the Technical Lead at E-Cell ECB | NEC IIT Bombay 2025, and I'm passionate about building tools that solve real problems.</p>
+    </div>
+  </div>
+
+  <!-- Skills -->
+  <div class="sec">
+    <p class="sec-title">Skills</p>
+    <div class="card">
+      <p class="card-title" style="margin-bottom:8px">Languages &amp; Tools</p>
+      <span class="tag tag-purple">Python</span>
+      <span class="tag tag-purple">MATLAB</span>
+      <span class="tag tag-purple">C</span>
+      <span class="tag tag-teal">MongoDB</span>
+      <span class="tag tag-teal">Simulink</span>
+      <span class="tag tag-amber">Git &amp; GitHub</span>
+      <span class="tag tag-blue">Generative AI</span>
+      <span class="tag tag-blue">Supervised Learning</span>
+      <span class="tag tag-coral">Snowflake</span>
+      <span class="tag tag-green">Linux</span>
+    </div>
+    <div class="card">
+      <p class="card-title" style="margin-bottom:8px">Domain knowledge</p>
+      <span class="tag tag-purple">AI &amp; Machine Learning</span>
+      <span class="tag tag-teal">Robotics &amp; Autonomous Systems</span>
+      <span class="tag tag-amber">Open Source Contribution</span>
+      <span class="tag tag-blue">Database Engineering</span>
+      <span class="tag tag-coral">Space Technology</span>
+    </div>
+    <div class="card">
+      <p class="card-title" style="margin-bottom:8px">Soft skills</p>
+      <span class="tag tag-green">Technical Communication</span>
+      <span class="tag tag-green">Leadership</span>
+      <span class="tag tag-green">Mentoring</span>
+      <span class="tag tag-green">Problem Solving</span>
+    </div>
+  </div>
+
+  <!-- Education -->
+  <div class="sec">
+    <p class="sec-title">Education</p>
+    <div class="card">
+      <p class="card-title">B.Tech in Computer Science &amp; Engineering</p>
+      <p class="card-sub">SRMIST, Tiruchirappalli · Aug 2024 – Jul 2028</p>
+      <p class="card-body">Relevant coursework: Data Structures &amp; Algorithms, Database Management Systems, Operating Systems, Artificial Intelligence.</p>
+    </div>
+    <div class="card">
+      <p class="card-title">Higher Secondary (PCM + Computer Science)</p>
+      <p class="card-sub">Kendriya Vidyalaya · May 2024</p>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <div class="sec">
+    <p class="sec-title">Projects</p>
+    <div class="card">
+      <button class="copy-btn" onclick="copyText('proj1')">Copy</button>
+      <p class="card-title">Database Engine with Smart Workload Balancer &amp; Crash Revival</p>
+      <p class="card-sub">Publication · Research Project</p>
+      <p class="card-body" id="proj1">Designed and published a database engine featuring an intelligent workload balancer and a crash recovery mechanism. The system optimises query distribution and ensures data integrity during unexpected failures.</p>
+      <div style="margin-top:8px">
+        <span class="tag tag-purple">Database Systems</span>
+        <span class="tag tag-teal">Crash Recovery</span>
+        <span class="tag tag-amber">Load Balancing</span>
+      </div>
+    </div>
+    <div class="card">
+      <button class="copy-btn" onclick="copyText('proj2')">Copy</button>
+      <p class="card-title">StellarX — Multilingual Voice Command Enhancement</p>
+      <p class="card-sub">Open Source · Resourcio Community (Mentee)</p>
+      <p class="card-body" id="proj2">Enhanced voice command input to support multilingual interaction and improved overall website functionality and UI. Collaborated in a team-based open-source workflow using Git.</p>
+      <div style="margin-top:8px">
+        <span class="tag tag-purple">Python</span>
+        <span class="tag tag-blue">NLP / Voice</span>
+        <span class="tag tag-amber">Open Source</span>
+      </div>
+    </div>
+    <div class="card">
+      <button class="copy-btn" onclick="copyText('proj3')">Copy</button>
+      <p class="card-title">Tiffin_Fusion — Website UI &amp; Functionality Improvements</p>
+      <p class="card-sub">Open Source · Resourcio Community (Mentee)</p>
+      <p class="card-body" id="proj3">Improved the Tiffin_Fusion web platform's UI and feature set, contributing bug fixes and enhancements through structured open-source contribution cycles.</p>
+      <div style="margin-top:8px">
+        <span class="tag tag-teal">Web Development</span>
+        <span class="tag tag-amber">Open Source</span>
+        <span class="tag tag-green">UI/UX</span>
+      </div>
+    </div>
+    <div class="card">
+      <button class="copy-btn" onclick="copyText('proj4')">Copy</button>
+      <p class="card-title">Mars Rover Simulation — Autonomous Navigation</p>
+      <p class="card-sub">MathWorks MATLAB EXPO Workshop</p>
+      <p class="card-body" id="proj4">Designed and simulated a Mars rover navigation system using MATLAB Simulink, incorporating autonomous path planning, obstacle detection, and sensor integration for environment mapping.</p>
+      <div style="margin-top:8px">
+        <span class="tag tag-purple">MATLAB</span>
+        <span class="tag tag-teal">Simulink</span>
+        <span class="tag tag-coral">Robotics</span>
+        <span class="tag tag-blue">Autonomous Systems</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Experience -->
+  <div class="sec">
+    <p class="sec-title">Experience</p>
+    <div class="card">
+      <p class="card-title">Technical Lead — E-Cell ECB | NEC IIT Bombay 2025</p>
+      <p class="card-sub">Jul 2025 – Dec 2025 · 6 months</p>
+      <p class="card-body">Leading technical initiatives at the Entrepreneurship Cell, managing projects and coordinating with cross-functional teams under the NEC IIT Bombay umbrella.</p>
+    </div>
+    <div class="card">
+      <p class="card-title">Research Intern — NeuralBI</p>
+      <p class="card-sub">Jun 2025 – Aug 2025 · 3 months · Kharagpur, WB</p>
+      <p class="card-body">Conducted AI research and debugging, working on applied machine learning problems in a professional research environment.</p>
+    </div>
+    <div class="card">
+      <p class="card-title">Summer Intern — Osdag (FOSSEE, IIT Bombay)</p>
+      <p class="card-sub">Feb 2025 – May 2025 · 4 months · Tamil Nadu</p>
+      <p class="card-body">Contributed to the Osdag open-source structural design software project under FOSSEE, IIT Bombay, applying engineering and coding skills to real-world software tools.</p>
+    </div>
+    <div class="card">
+      <p class="card-title">MATLAB Workshop Instructor — SRMIST Tiruchirappalli</p>
+      <p class="card-sub">Dec 2024 – Jan 2025 · 2 months · Remote</p>
+      <p class="card-body">Taught advanced MATLAB concepts to students, focusing on autonomous systems, model-based design, and STEM fundamentals. Developed curriculum to build confidence and early interest in technology.</p>
+    </div>
+    <div class="card">
+      <p class="card-title">Open Source Contributor (Mentee) — Resourcio Community</p>
+      <p class="card-sub">Feb 2025 – Apr 2025 · 3 months · Remote</p>
+      <p class="card-body">Contributed to StellarX and Tiffin_Fusion projects. Enhanced voice command input for multilingual support and improved website functionality and UI under mentorship.</p>
+    </div>
+    <div class="card">
+      <p class="card-title">Contributor — GirlScript Summer of Code (GSSoC'24 Extended)</p>
+      <p class="card-sub">Oct 2024 – Nov 2024 · 2 months</p>
+      <p class="card-body">Contributed to open-source repositories during GSSoC'24 Extended, gaining hands-on experience with real-world collaborative development workflows.</p>
+    </div>
+  </div>
+
+  <!-- Certifications -->
+  <div class="sec">
+    <p class="sec-title">Certifications</p>
+    <div class="grid2">
+      <div class="card">
+        <p class="card-title">Introduction to MongoDB</p>
+        <p class="card-sub" style="margin:0">MongoDB University</p>
+      </div>
+      <div class="card">
+        <p class="card-title">SnowPro Associate: Platform</p>
+        <p class="card-sub" style="margin:0">Snowflake</p>
+      </div>
+      <div class="card">
+        <p class="card-title">Getting Started with Artificial Intelligence</p>
+        <p class="card-sub" style="margin:0">IBM / PWID-B0924900</p>
+      </div>
+      <div class="card">
+        <p class="card-title">Introduction to Programming Using Python</p>
+        <p class="card-sub" style="margin:0">Online Certification</p>
+      </div>
+      <div class="card">
+        <p class="card-title">Application of Space Technology</p>
+        <p class="card-sub" style="margin:0">Space Technology Programme</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Languages -->
+  <div class="sec">
+    <p class="sec-title">Languages</p>
+    <div class="card">
+      <div style="display:flex;gap:20px;flex-wrap:wrap;font-size:13px;color:var(--color-text-primary)">
+        <span><span class="dot"></span>Bengali — Native</span>
+        <span><span class="dot"></span>English — Full Professional</span>
+        <span><span class="dot"></span>Hindi — Professional Working</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="sec">
+    <p class="sec-title">Contact</p>
+    <div class="card">
+      <p class="card-body">
+        Email: <a class="info-link" href="mailto:souhridyapatra@gmail.com">souhridyapatra@gmail.com</a><br>
+        LinkedIn: <a class="info-link" href="https://linkedin.com/in/souhridyapatra" target="_blank">linkedin.com/in/souhridyapatra</a><br>
+        Location: Kharagpur, West Bengal, India
+      </p>
+    </div>
+  </div>
+
+</div>
+<script>
+function copyText(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  navigator.clipboard.writeText(el.innerText).then(() => {
+    const btns = document.querySelectorAll('.copy-btn');
+    btns.forEach(b => { if (b.onclick.toString().includes(id)) { b.textContent = 'Copied!'; setTimeout(() => b.textContent = 'Copy', 1500); } });
+  });
+}
+</script>
+</body>
+</html>
