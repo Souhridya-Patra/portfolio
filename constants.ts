@@ -159,14 +159,14 @@ export const PORTFOLIO_DATA: PortfolioData = {
       issuer: "HackerRank",
       date: "2025",
       link: "https://www.hackerrank.com/certificates/ca9159a97b0c",
-      badgeUrl: "https://www.hackerrank.com/certificates/iframe/ca9159a97b0c?auto=format&fit=crop&q=80&w=256"
+      badgeUrl: "https://beecrowd.com/wp-content/uploads/2024/04/2022-07-19-Melhores-cursos-de-Python.jpg?auto=format&fit=crop&q=80&w=256"
     },
     {
       name: "SQL Certification",
       issuer: "HackerRank",
       date: "2025",
       link: "https://www.hackerrank.com/certificates/f7a338a9974c",
-      badgeUrl: "https://www.hackerrank.com/certificates/iframe/f7a338a9974c?auto=format&fit=crop&q=80&w=256"
+      badgeUrl: "https://www.rogersoft.com/storage/attachments/1694676692.jpg?auto=format&fit=crop&q=80&w=256"
     },
     // {
     //   name: "Advanced Softwar-Engineering Job Simulation",
