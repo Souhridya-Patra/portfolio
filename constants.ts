@@ -158,7 +158,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
       name: "Python Certification",
       issuer: "HackerRank",
       date: "2025",
-      link: "https://www.hackerrank.com/certificates/ca9159a97b0chttps://www.hackerrank.com/certificates/ca9159a97b0c",
+      link: "https://www.hackerrank.com/certificates/ca9159a97b0c",
       badgeUrl: "https://www.hackerrank.com/certificates/iframe/ca9159a97b0c?auto=format&fit=crop&q=80&w=256"
     },
     {
