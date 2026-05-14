@@ -158,15 +158,15 @@ export const PORTFOLIO_DATA: PortfolioData = {
       name: "Python Certification",
       issuer: "HackerRank",
       date: "2025",
-      link: "https://www.hackerrank.com",
-      badgeUrl: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=256"
+      link: "https://www.hackerrank.com/certificates/ca9159a97b0chttps://www.hackerrank.com/certificates/ca9159a97b0c",
+      badgeUrl: "https://www.hackerrank.com/certificates/iframe/ca9159a97b0c?auto=format&fit=crop&q=80&w=256"
     },
     {
       name: "SQL Certification",
       issuer: "HackerRank",
       date: "2025",
-      link: "https://www.hackerrank.com",
-      badgeUrl: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=256"
+      link: "https://www.hackerrank.com/certificates/f7a338a9974c",
+      badgeUrl: "https://www.hackerrank.com/certificates/iframe/f7a338a9974c?auto=format&fit=crop&q=80&w=256"
     },
     {
       name: "Digital Skills",
