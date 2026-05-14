@@ -168,13 +168,13 @@ export const PORTFOLIO_DATA: PortfolioData = {
       link: "https://www.hackerrank.com/certificates/f7a338a9974c",
       badgeUrl: "https://www.hackerrank.com/certificates/iframe/f7a338a9974c?auto=format&fit=crop&q=80&w=256"
     },
-    {
-      name: "Digital Skills",
-      issuer: "Accenture",
-      date: "2025",
-      link: "https://www.accenture.com",
-      badgeUrl: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=256"
-    },
+    // {
+    //   name: "Advanced Softwar-Engineering Job Simulation",
+    //   issuer: "Walmart Global Tech",
+    //   date: "2025",
+    //   link: "https://www.accenture.com",
+    //   badgeUrl: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=256"
+    // },
   ],
   certificates: [
     {
