@@ -11,6 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
+BLACK_SCREEN_FIX.md
 
 # Editor directories and files
 .vscode/*

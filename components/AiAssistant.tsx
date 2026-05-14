@@ -28,9 +28,15 @@ const AiAssistant: React.FC = () => {
     setMessages(prev => [...prev, { role: 'user', content: userMsg }]);
     setIsLoading(true);
 
-    const response = await getAiResponse(userMsg);
-    setMessages(prev => [...prev, { role: 'assistant', content: response }]);
-    setIsLoading(false);
+    try {
+      const response = await getAiResponse(userMsg);
+      setMessages(prev => [...prev, { role: 'assistant', content: response }]);
+    } catch (error) {
+      console.error('AI Response error:', error);
+      setMessages(prev => [...prev, { role: 'assistant', content: 'Sorry, I encountered an error. Please try again later.' }]);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (

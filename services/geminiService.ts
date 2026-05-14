@@ -2,9 +2,23 @@
 import { GoogleGenAI } from "@google/genai";
 import { PORTFOLIO_DATA } from "../constants";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || "" });
+const apiKey = import.meta.env.VITE_GEMINI_API_KEY || process.env.VITE_GEMINI_API_KEY || "";
+
+let ai: GoogleGenAI | null = null;
+
+try {
+  if (apiKey) {
+    ai = new GoogleGenAI({ apiKey });
+  }
+} catch (error) {
+  console.error('Failed to initialize GoogleGenAI:', error);
+}
 
 export const getAiResponse = async (userPrompt: string, context?: string) => {
+  if (!ai) {
+    return "AI Assistant is not configured. Please set up your GEMINI_API_KEY environment variable.";
+  }
+
   const model = "gemini-3-flash-preview";
   
   const baseInstruction = `
@@ -34,6 +48,7 @@ export const getAiResponse = async (userPrompt: string, context?: string) => {
 
     return response.text || "Connection error. Please try again.";
   } catch (error) {
+    console.error('AI API Error:', error);
     return "The AI is currently processing a large deployment. Try again in a second!";
   }
 };
